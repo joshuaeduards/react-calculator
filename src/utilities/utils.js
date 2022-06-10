@@ -1,11 +1,3 @@
-export const checklastindex = (regex, fromIndex) => {
-    return String.prototype.lastIndexOfRegex = function(regex, fromIndex){
-        let str = fromIndex ? this.substring(0, fromIndex) : this;
-        let match = str.match(regex);
-        return match ? str.lastIndexOf(match[match.length-1]) : -1;
-      }
-}
-
 export const hasoperators = (str="") => {
     const operator = ["*", "/", "+", "-", "÷", "×"];
     for (var i = 0; i < str.length; i++) {
@@ -39,12 +31,14 @@ export const removelastoperator = (str) => {
 }
 
 export const appendval = (strdisplay, strinput) => {
-    if(strinput != ""){
+    if(strinput !== ""){
         return strdisplay.concat(strinput);
     }
 }
 
-export const stringtomath = () => {
-    
+export const stringtoarithmetic = (str) => {
+    // const regex = new RegExp('\/|\+|-|\*|\÷|\×|AC');
+    // const isMatch = new RegExp(regex, stores.screendisplay);
+    return str
 }
 

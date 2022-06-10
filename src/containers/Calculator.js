@@ -28,8 +28,6 @@ export const Calculator = () => {
         const value = event.target.value;
         // const display_value = event.target.innerText; //or innerHTML
 
-        // const regex = new RegExp('\/|\+|-|\*|\÷|\×|AC');
-        // const isMatch = new RegExp(regex, stores.screendisplay);
         if (value === others.del[1]){
             stores.handleValue("", "clear");
         }
